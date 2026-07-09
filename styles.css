@@ -1121,7 +1121,8 @@ textarea {
         height: 44px;
         place-content: center;
         gap: 6px;
-        background: transparent
+        background: transparent;
+        color: inherit
     }
 
     .nav-toggle span {

@@ -1,56 +1,34 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seite in Entwicklung | 404</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seite nicht gefunden — 404 | Franz Vieth Logistik</title>
+  <link rel="icon" href="img/minilogo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="is-loading" style="background: radial-gradient(120% 90% at 50% 40%, #ffffff 0%, #f7f8fb 55%, #eef0f5 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+<body style="background: radial-gradient(120% 90% at 50% 40%, #ffffff 0%, #f7f8fb 55%, #eef0f5 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: Arial, sans-serif; color: #172033; margin: 0;">
 
-  <!-- ============ PAGE LOADER (preloader) ============ -->
-  <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-busy="true" aria-label="Seite wird geladen">
-    <div class="page-loader__inner" style="--p: 0">
-      <div class="logo-mark logo-mark--loader">
-        <img class="logo-mark__color" src="img/logo.svg" alt="" width="220" height="72" />
-        <img class="logo-mark__white" src="img/logo.svg" alt="" width="220" height="72" />
-      </div>
-      <p class="page-loader__label">Wird geladen…</p>
-    </div>
-  </div>
-
-  <main style="text-align: center; padding: var(--s-4); max-width: 520px; width: 100%;">
-    <div style="margin-bottom: var(--s-3); display: flex; justify-content: center;">
-      <img src="img/logo.svg" alt="Franz Vieth Logistik" width="180" height="59" style="display: block; filter: drop-shadow(0 4px 12px rgba(18,26,48,.05));" />
+  <main style="text-align: center; padding: 40px 24px; max-width: 520px; width: 100%;">
+    <div style="margin-bottom: 30px; display: flex; justify-content: center;">
+      <a href="index.html" aria-label="Franz Vieth Logistik Startseite">
+        <img src="img/logo.svg" alt="Franz Vieth Logistik Logo" width="180" height="59" style="display: block; filter: drop-shadow(0 4px 12px rgba(18,26,48,.05));">
+      </a>
     </div>
     
-    <h1 style="font-family: var(--font-display); font-size: clamp(4rem, 15vw, 7.5rem); font-weight: 700; color: var(--red); line-height: 1; margin: 0; filter: drop-shadow(0 8px 24px rgba(227,0,68,.12));">404</h1>
+    <h1 style="font-size: clamp(4rem, 15vw, 7.5rem); font-weight: 800; color: #ec1956; line-height: 1; margin: 0; filter: drop-shadow(0 8px 24px rgba(227,0,68,.12)); letter-spacing: -0.05em;">404</h1>
     
-    <h2 class="h3" style="color: var(--blue); margin-top: var(--s-2); margin-bottom: var(--s-1);">In Entwicklung</h2>
+    <h2 style="color: #102658; font-size: 24px; font-weight: 700; margin-top: 20px; margin-bottom: 12px;">In Entwicklung / Nicht gefunden</h2>
     
-    <p class="lead" style="color: var(--muted); margin-inline: auto; font-size: 1rem; line-height: 1.5; margin-bottom: var(--s-3);">
-      Diese Seite befindet sich momentan noch in der Entwicklung.<br />
+    <p style="color: #657085; font-size: 16px; line-height: 1.6; margin-bottom: 32px; margin-top: 0;">
+      Diese Seite befindet sich momentan noch in der Entwicklung.<br>
       Wir arbeiten daran – in Kürze entsteht hier etwas Neues.
     </p>
     
-    <a class="btn btn--primary" href="index.html" style="font-size: 0.95rem; padding: 12px 24px;">
-      Zurück zum Hauptmenü
+    <a class="button button-primary" href="index.html" style="font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px;">
+      Zurück zur Startseite <span>→</span>
     </a>
   </main>
-
-  <!-- ============ SCROLL TO TOP BUTTON ============ -->
-  <button class="scroll-top" id="scrollTop" aria-label="Nach oben scrollen" title="Nach oben scrollen">
-    <svg class="scroll-top__progress" width="40" height="40" viewBox="0 0 40 40">
-      <circle class="scroll-top__circle-bg" cx="20" cy="20" r="16" fill="none" stroke-width="3"></circle>
-      <circle class="scroll-top__circle-fg" cx="20" cy="20" r="16" fill="none" stroke-dasharray="100.5" stroke-dashoffset="100.5" stroke-width="3"></circle>
-    </svg>
-    <span class="scroll-top__arrow">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.4 15.4L12 10.8l4.6 4.6L18 14l-6-6-6 6z"/></svg>
-    </span>
-  </button>
 
   <script src="script.js" defer></script>
 </body>

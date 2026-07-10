@@ -111,6 +111,12 @@ textarea {
     box-shadow: 0 1px 0 rgba(16, 38, 88, .12)
 }
 
+body.nav-open .site-header {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transition: none !important;
+}
+
 .header-inner {
     height: 82px;
     display: flex;
